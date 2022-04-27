@@ -46,6 +46,7 @@ export default class Editor extends Vue {
     });
 
     this.test?.updateCode(output);
+    // @ts-ignore
     this.passes = !Boolean(tests[this.testNumber].data.filter((test: any) => !test.status).length);
 
     if (this.passes) {
